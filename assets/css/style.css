@@ -2091,5 +2091,18 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 700px; }
+    .project-img{
+        width: 100%;
+        height: 220px;         /* 你可以改成 200/240/260 */
+        overflow: hidden;
+        border-radius: 18px;   /* 按你模板圆角调 */
+    }
+
+    .project-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;     /* 关键：裁切填满，保证统一高度 */
+        display: block;
+    }
 
 }
