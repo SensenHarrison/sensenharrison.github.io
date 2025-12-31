@@ -2065,30 +2065,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     opacity: 0;
   }
 
-  .social-list { justify-content: center; }
-    .social-links {
-        display: flex;
-        gap: 10px;
-        justify-content: flex-start;
-        align-items: center;
-        margin-left: 10px;
-        margin-top: 5px;
-    }
-
-    .social-link ion-icon {
-        font-size: 18px;
-        color: var(--light-gray);
-        transition: color var(--transition-1);
-    }
-
-    .social-link:hover ion-icon {
-        color: var(--orange-yellow-crayola);
-    }
 
 
-  /**
-	 * RESUME
-	 */
+
+    /**
+       * RESUME
+       */
 
   .timeline-text { max-width: 700px; }
     .project-img{
@@ -2105,4 +2087,20 @@ textarea.form-input::-webkit-resizer { display: none; }
         display: block;
     }
 
+}
+.social-list { justify-content: center; }
+.social-links {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.social-link ion-icon{
+    color: var(--light-gray);
+}
+.social-link:hover ion-icon{
+    color: var(--orange-yellow-crayola);
 }
