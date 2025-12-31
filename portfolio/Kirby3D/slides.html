@@ -132,31 +132,34 @@
     const slides = Array.from(deck.querySelectorAll('.slide'));
     const pageEl = document.getElementById('page');
 
-    function currentIndex(){
-        const h = deck.clientHeight;
+    // 计算“每一页真正的步长”（= slide 的高度）
+    function stepHeight() {
+        const first = slides[0];
+        return first ? first.getBoundingClientRect().height : deck.clientHeight;
+    }
+
+    function currentIndex() {
+        const h = stepHeight();
         return Math.max(0, Math.min(slides.length - 1, Math.round(deck.scrollTop / h)));
     }
 
-    function updatePage(){
+    function updatePage() {
         const idx = currentIndex();
         pageEl.textContent = `${idx + 1} / ${slides.length}`;
     }
 
-    function go(delta){
-        const h = deck.clientHeight;
+    function go(delta) {
+        const h = stepHeight();
         deck.scrollBy({ top: delta * h, behavior: 'smooth' });
     }
 
-    // Scroll -> update page indicator
     deck.addEventListener('scroll', () => requestAnimationFrame(updatePage));
     window.addEventListener('resize', () => requestAnimationFrame(updatePage));
     updatePage();
 
-    // Buttons
     document.getElementById('prev').addEventListener('click', () => go(-1));
     document.getElementById('next').addEventListener('click', () => go(1));
 
-    // Keyboard navigation
     window.addEventListener('keydown', (e) => {
         const k = e.key;
         if (k === 'ArrowDown' || k === 'PageDown' || k === ' ') {

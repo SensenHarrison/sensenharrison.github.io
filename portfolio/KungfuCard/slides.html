@@ -7,7 +7,6 @@
 
     <link rel="icon" href="../../assets/images/logo.png" type="image/png">
 
-
     <style>
         :root{
             --bg: #0b0b0b;
@@ -98,7 +97,6 @@
 <body>
 <div class="deck" id="deck">
 
-    <!-- 12 slides -->
     <section class="slide"><img src="./slides/slide1.PNG"  alt="Slide 1"  loading="lazy"></section>
     <section class="slide"><img src="./slides/slide2.PNG"  alt="Slide 2"  loading="lazy"></section>
     <section class="slide"><img src="./slides/slide3.PNG"  alt="Slide 3"  loading="lazy"></section>
@@ -130,9 +128,7 @@
 
 <div class="hud">
     <div class="chip" id="page">1 / 26</div>
-
     <div class="chip hint">Scroll / ↑↓ / PgUp PgDn / Space</div>
-
     <div class="chip">
         <button class="btn" id="prev" type="button">Prev</button>
         <button class="btn" id="next" type="button">Next</button>
@@ -144,8 +140,13 @@
     const slides = Array.from(deck.querySelectorAll('.slide'));
     const pageEl = document.getElementById('page');
 
+    function stepHeight() {
+        // 每页的真实高度（避免 deck padding 造成误差）
+        return slides[0].getBoundingClientRect().height;
+    }
+
     function currentIndex(){
-        const h = deck.clientHeight;
+        const h = stepHeight();
         return Math.max(0, Math.min(slides.length - 1, Math.round(deck.scrollTop / h)));
     }
 
@@ -155,20 +156,17 @@
     }
 
     function go(delta){
-        const h = deck.clientHeight;
+        const h = stepHeight();
         deck.scrollBy({ top: delta * h, behavior: 'smooth' });
     }
 
-    // Scroll -> update page indicator
     deck.addEventListener('scroll', () => requestAnimationFrame(updatePage));
     window.addEventListener('resize', () => requestAnimationFrame(updatePage));
     updatePage();
 
-    // Buttons
     document.getElementById('prev').addEventListener('click', () => go(-1));
     document.getElementById('next').addEventListener('click', () => go(1));
 
-    // Keyboard navigation
     window.addEventListener('keydown', (e) => {
         const k = e.key;
         if (k === 'ArrowDown' || k === 'PageDown' || k === ' ') {

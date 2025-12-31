@@ -3,10 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mei (Volcanologist) - Slides</title>
+    <title>KungFu Card - Slides</title>
 
     <link rel="icon" href="../../assets/images/logo.png" type="image/png">
-
 
     <style>
         :root{
@@ -98,7 +97,6 @@
 <body>
 <div class="deck" id="deck">
 
-    <!-- 12 slides -->
     <section class="slide"><img src="./slides/slide1.PNG"  alt="Slide 1"  loading="lazy"></section>
     <section class="slide"><img src="./slides/slide2.PNG"  alt="Slide 2"  loading="lazy"></section>
     <section class="slide"><img src="./slides/slide3.PNG"  alt="Slide 3"  loading="lazy"></section>
@@ -111,14 +109,26 @@
     <section class="slide"><img src="./slides/slide10.PNG" alt="Slide 10" loading="lazy"></section>
     <section class="slide"><img src="./slides/slide11.PNG" alt="Slide 11" loading="lazy"></section>
     <section class="slide"><img src="./slides/slide12.PNG" alt="Slide 12" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide13.PNG" alt="Slide 13" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide14.PNG" alt="Slide 14" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide15.PNG" alt="Slide 15" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide16.PNG" alt="Slide 16" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide17.PNG" alt="Slide 17" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide18.PNG" alt="Slide 18" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide19.PNG" alt="Slide 19" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide20.PNG" alt="Slide 20" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide21.PNG" alt="Slide 21" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide22.PNG" alt="Slide 22" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide23.PNG" alt="Slide 23" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide24.PNG" alt="Slide 24" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide25.PNG" alt="Slide 25" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide26.PNG" alt="Slide 26" loading="lazy"></section>
 
 </div>
 
 <div class="hud">
-    <div class="chip" id="page">1 / 12</div>
-
+    <div class="chip" id="page">1 / 26</div>
     <div class="chip hint">Scroll / ↑↓ / PgUp PgDn / Space</div>
-
     <div class="chip">
         <button class="btn" id="prev" type="button">Prev</button>
         <button class="btn" id="next" type="button">Next</button>
@@ -130,8 +140,13 @@
     const slides = Array.from(deck.querySelectorAll('.slide'));
     const pageEl = document.getElementById('page');
 
+    function stepHeight() {
+        // 每页的真实高度（避免 deck padding 造成误差）
+        return slides[0].getBoundingClientRect().height;
+    }
+
     function currentIndex(){
-        const h = deck.clientHeight;
+        const h = stepHeight();
         return Math.max(0, Math.min(slides.length - 1, Math.round(deck.scrollTop / h)));
     }
 
@@ -141,20 +156,17 @@
     }
 
     function go(delta){
-        const h = deck.clientHeight;
+        const h = stepHeight();
         deck.scrollBy({ top: delta * h, behavior: 'smooth' });
     }
 
-    // Scroll -> update page indicator
     deck.addEventListener('scroll', () => requestAnimationFrame(updatePage));
     window.addEventListener('resize', () => requestAnimationFrame(updatePage));
     updatePage();
 
-    // Buttons
     document.getElementById('prev').addEventListener('click', () => go(-1));
     document.getElementById('next').addEventListener('click', () => go(1));
 
-    // Keyboard navigation
     window.addEventListener('keydown', (e) => {
         const k = e.key;
         if (k === 'ArrowDown' || k === 'PageDown' || k === ' ') {
