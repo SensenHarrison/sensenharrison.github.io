@@ -1,0 +1,1290 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张森个人主页</title>
+
+    <!--
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/png">
+
+    <!--
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!--
+  - #MAIN
+-->
+
+<main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+        <div class="sidebar-info">
+
+            <figure class="avatar-box">
+                <img src="./assets/images/PersonalPicture.jpg" alt="Richard hanrick" width="80">
+            </figure>
+
+            <div class="info-content">
+                <h1 class="name" title="Sen Zhang(Harrison)">张森</h1>
+
+                <p class="title">游戏爱好者</p>
+            </div>
+
+            <button class="info_more-btn" data-sidebar-btn>
+                <span>显示联系方式</span>
+
+                <ion-icon name="chevron-down"></ion-icon>
+            </button>
+
+        </div>
+
+        <div class="sidebar-info_more">
+
+            <div class="separator"></div>
+
+            <ul class="contacts-list">
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">邮箱</p>
+
+                        <a href="mailto:Sen.Zhang22@student.xjtlu.edu.cn" class="contact-link">Sen.Zhang22@student.xjtlu.edu.cn</a>
+                        <a href="mailto:2954519433@qq.com" class="contact-link">2954519433@qq.com</a>
+                    </div>
+
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">电话</p>
+
+                        <a href="tel:+86 18154016962" class="contact-link">+86 18154016962</a>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">生日</p>
+
+                        <time datetime="2004-07-29">2004年7月29日</time>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="icon-box">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
+
+                    <div class="contact-info">
+                        <p class="contact-title">所在地</p>
+
+                        <address>中国安徽芜湖</address>
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <div class="separator"></div>
+
+            <ul class="social-list">
+
+                <li class="social-item">
+                    <a href="https://qm.qq.com/q/EoAuW8r7WK" class="social-link" target="_blank" rel="noopener">
+                        <img src="./assets/images/QQ.svg" alt="QQ" width="18" height="18">
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="https://blog.csdn.net/sensen_kiss?spm=1000.2115.3001.5343" class="social-link" target="_blank" rel="noopener">
+                        <img src="./assets/images/csdn.svg" alt="CSDN" width="18" height="18">
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="https://live.bilibili.com/31724145?live_from=81011&spm_id_from=333.1007.top_right_bar_window_history.content.click" class="social-link" target="_blank" rel="noopener">
+                        <img src="./assets/images/bilibili.svg" alt="Bilibili" width="18" height="18">
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="https://github.com/SensenHarrison?tab=repositories" class="social-link" target="_blank" rel="noopener">
+                        <img src="./assets/images/github.svg" alt="GitHub" width="18" height="18">
+                    </a>
+                </li>
+
+                <li class="social-item">
+                    <a href="https://steamcommunity.com/profiles/76561198171946075/" class="social-link" target="_blank" rel="noopener">
+                        <img src="./assets/images/steam.svg" alt="Steam" width="18" height="18">
+                    </a>
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+        <!--
+          - #NAVBAR
+        -->
+
+        <nav class="navbar">
+
+            <ul class="navbar-list">
+
+                <li class="navbar-item">
+                    <button class="navbar-link active" data-nav-link data-target="about">关于我</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link data-target="resume">简历</button>
+                </li>
+
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link data-target="contact">联系我</button>
+                </li>
+
+                <li class="navbar-item">
+                    <a class="navbar-link" href="./index.html">EN</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+
+
+
+        <!--
+          - #ABOUT
+        -->
+
+        <article class="about  active" data-page="about">
+
+            <header>
+                <h2 class="h2 article-title">关于我</h2>
+            </header>
+
+            <section class="about-text">
+                <p>
+                    你好！我目前是西交利物浦大学信息与计算科学专业的大四学生。
+                </p>
+
+                <p>
+                    我曾在西交利物浦大学 X-CHI Lab、人机交互与沉浸式可视化相关实验室担任科研助理，也曾参与香港科技大学（广州）计算媒体与艺术方向的相关研究工作。
+                    我的研究兴趣主要集中在人机交互、虚拟现实和沉浸式交互等方向。
+                </p>
+                <p>
+                    我会在 CSDN 上分享学习笔记和计算机相关经验。
+                    你可以通过网站中的链接找到我。
+                    我也很乐意帮助大家解决计算机、编程和项目开发方面的问题。
+                    如果你有相关问题，可以通过网站中的联系方式联系我。
+                </p>
+                <p>
+                    我同时也是一名游戏爱好者和游戏开发者。
+                    最近我在玩《守望先锋》。
+                    如果你想一起玩游戏，可以通过网站中的 Steam 链接联系我。
+                    此外，我参与开发的新游戏《功夫牌》也即将发布，希望大家多多支持。
+                    我有时也会在 B站 直播游戏，欢迎来看看。
+                </p>
+            </section>
+
+            <section class="projects">
+                <h3 class="h3 service-title">作品集</h3>
+                <div class="filter-select-box">
+
+                    <button class="filter-select" data-select>
+
+                        <div class="select-value" data-selecct-value>选择分类</div>
+
+                        <div class="select-icon">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </div>
+
+                    </button>
+
+                    <ul class="select-list">
+
+                        <li class="select-item">
+                            <button data-select-item>All</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Game</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>VR</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Research</button>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <ul class="project-list">
+                    <li class="project-item  active" data-filter-item data-category="game">
+                        <a href="./portfolio/Mei(Volcanologist)/slides.html" target="_blank">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="./portfolio/Mei(Volcanologist)/Mei(Cover).JPG" alt="Mei(Volcanologist)" loading="lazy">
+                            </figure>
+                        </a>
+
+                        <h3 class="project-title">Mei(Volcanologist)</h3>
+                        <p class="project-category">Game</p>
+
+                        <div class="social-links">
+                            <a href="./portfolio/Mei(Volcanologist)/video.html" class="social-link" target="_blank" rel="noopener noreferrer">
+                                <ion-icon name="play-circle-outline"></ion-icon>
+                            </a>
+                        </div>
+
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="game">
+                        <a href="./portfolio/Kirby2D/slides.html" target="_blank">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="./portfolio/Kirby2D/Kirby2D(Cover).png" alt="Kirby 2D Game" loading="lazy">
+                            </figure>
+                        </a>
+
+                        <h3 class="project-title">Kirby 2D Game</h3>
+                        <p class="project-category">Game</p>
+
+                        <div class="social-links">
+                            <a href="./portfolio/Kirby2D/Kirby2D_Game.exe"
+                               class="social-link"
+                               download="Kirby2D_Game.exe"
+                               aria-label="Download game">
+                                <ion-icon name="cloud-download-outline"></ion-icon>
+                            </a>
+                            <a href="https://github.com/SensenHarrison/CPT205-CW1-2D-Kirby-Birthday-Card"
+                               class="social-link"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View source code on GitHub">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                            <a href="https://blog.csdn.net/sensen_kiss/article/details/145036487"
+                               class="social-link"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="Read project write-up on CSDN">
+                                <ion-icon name="document-text-outline"></ion-icon>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=TPnAU5W75sk"
+                               class="social-link"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="Watch on YouTube">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+
+                        </div>
+
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="game">
+                        <a href="./portfolio/Kirby3D/slides.html" target="_blank">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="./portfolio/Kirby3D/Kirby3D(Cover).png" alt="Kirby 3D Game" loading="lazy">
+                            </figure>
+                        </a>
+
+                        <h3 class="project-title">Kirby 3D Game</h3>
+                        <p class="project-category">Game</p>
+
+                        <div class="social-links">
+                            <a href="https://github.com/SensenHarrison/CPT205-CW2-3D-Kirby-Defences-Gift"
+                               class="social-link"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View source code on GitHub">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                            <a href="https://blog.csdn.net/sensen_kiss/article/details/145597761"
+                               class="social-link"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="Read project write-up on CSDN">
+                                <ion-icon name="document-text-outline"></ion-icon>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=3k_2Wjgwa_o"
+                               class="social-link"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="Watch on YouTube">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </div>
+
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="game">
+                        <a href="./portfolio/KungfuCard/slides.html" target="_blank">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="./portfolio/KungfuCard/KungFuCard(Cover).png" alt="Kungfu Card" loading="lazy">
+                            </figure>
+                        </a>
+
+                        <h3 class="project-title">Kungfu Card</h3>
+                        <p class="project-category">Game</p>
+
+                        <div class="social-links">
+                            <a href="https://store.steampowered.com/app/3340780/_/"
+                               class="social-link"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View on Steam">
+                                <ion-icon name="logo-steam"></ion-icon>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=379-4ssXIEY"
+                               class="social-link"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="Watch on YouTube">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </div>
+
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="vr,research">
+                        <a href="./portfolio/Cursor/slides.html" target="_blank">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="./portfolio/Cursor/Gaze_Cursor(Cover).png" alt="Gaze Cursor" loading="lazy">
+                            </figure>
+                        </a>
+
+                        <h3 class="project-title">Gaze Cursor</h3>
+                        <p class="project-category">VR, Research</p>
+
+                        <div class="social-links">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/11204728"
+                               class="social-link"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View paper on IEEE Xplore">
+                                <ion-icon name="link-outline"></ion-icon>
+                            </a>
+                            <a href="./portfolio/Cursor/Gaze%20Cursor.pdf"
+                               class="social-link"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="View Gaze Cursor PDF">
+                                <ion-icon name="document-text-outline"></ion-icon>
+                            </a>
+                            <a href="./portfolio/Cursor/Gaze%20Cursor.pdf"
+                               class="social-link"
+                               download="Gaze_Cursor.pdf"
+                               aria-label="Download Gaze Cursor PDF">
+                                <ion-icon name="cloud-download-outline"></ion-icon>
+                            </a>
+                        </div>
+
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="vr,research">
+                        <a href="./portfolio/RayFlex/slides.html" target="_blank">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="./portfolio/RayFlex/RayFlex(Cover).png" alt="RayFlex" loading="lazy">
+                            </figure>
+                        </a>
+
+                        <h3 class="project-title">RayFlex</h3>
+                        <p class="project-category">VR, Research</p>
+
+                        <div class="social-links">
+                            <a href="https://www.youtube.com/watch?v=Xq-F6k0ffbA&list=PLUdrVtpRUIHM4KVJS9Vr-wgWl28B0Klo5"
+                               class="social-link"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="Watch on YouTube">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </div>
+
+                    </li>
+                </ul>
+            </section>
+
+            <!--
+              - service
+            -->
+
+            <section class="service">
+
+                <h3 class="h3 service-title">我正在做什么</h3>
+
+                <ul class="service-list">
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img src="./assets/images/student.svg
+                " alt="Student icon" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">大四学生</h4>
+
+                            <p class="service-item-text">
+                                我目前是信息与计算科学专业的大四学生。
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img src="./assets/images/research-icon.svg" alt="Research icon" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">科研助理</h4>
+
+                            <p class="service-item-text">
+                                参与人机交互和虚拟现实方向的科研项目。
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img src="./assets/images/programmer.svg" alt="Programmer icon" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">游戏开发者</h4>
+
+                            <p class="service-item-text">
+                                正在为游戏工作室开发一款卡牌游戏，该游戏预计于 2026 年上线。
+                            </p>
+                        </div>
+
+                    </li>
+
+                    <li class="service-item">
+
+                        <div class="service-icon-box">
+                            <img src="./assets/images/player.svg" alt="Player icon" width="40">
+                        </div>
+
+                        <div class="service-content-box">
+                            <h4 class="h4 service-item-title">游戏爱好者</h4>
+
+                            <p class="service-item-text">
+                                我喜欢玩各种类型的游戏，有时也会进行游戏直播。
+                            </p>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <div class="skills-section">
+                    <div class="skills-category">
+                        <div class="skills-tags">
+                            <div class="tag-box">
+                                <span>C#</span>
+                            </div>
+                            <div class="tag-box">
+                                <span>C++</span>
+                            </div>
+                            <div class="tag-box">
+                                <span>Java</span>
+                            </div>
+                            <div class="tag-box">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tag-box">
+                                <span>Python</span>
+                            </div>
+                            <div class="tag-box">
+                                <span>SQL</span>
+                            </div>
+                            <div class="tag-box">
+                                <span>Swift</span>
+                            </div>
+                            <div class="tag-box">
+                                <span>Unity</span>
+                            </div>
+                            <div class="tag-box">
+                                <span>Blender</span>
+                            </div>
+                            <div class="tag-box">
+                                <span>Latex</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </article>
+
+
+
+
+
+        <!--
+          - #RESUME
+        -->
+
+        <article class="resume" data-page="resume">
+
+            <header>
+                <h2 class="h2 article-title">Resume
+                    <a href="./SenZhang_Resume_zh-CN.pdf"
+                       download="SenZhang_Resume_zh-CN.pdf"
+                       class="tag-box large paper-download"
+                       aria-label="Download resume PDF">
+                        <ion-icon name="cloud-download-outline"></ion-icon>
+                    </a>
+                </h2>
+            </header>
+
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="school-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3">教育经历</h3>
+                </div>
+
+                <ol class="timeline-list">
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">西交利物浦大学</h4>
+
+                        <span>2022 - 2026</span>
+
+                        <p class="timeline-text">
+                            理学学士 信息与计算科学, 一等学位（预计）, GPA: 3.85
+                        </p>
+                    </li>
+                </ol>
+
+            </section>
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3">出版物</h3>
+                </div>
+
+                <ol class="timeline-list">
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">
+                            <a href="https://www.chinavis.org/2025/zh/poster/"
+                               class="paper-title-link"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                FrameBeats: A prototype that compose the sound effects for input visuals
+                            </a>
+                            <a href="./papers/ChinaVis2025_Poster_Article.pdf"
+                               download="ChinaVis2025_Poster_SenZhang_FrameBeats：A prototype that compose the sound effects for input visuals_2Page.pdf"
+                               class="tag-box small paper-download"
+                               aria-label="Download paper PDF">
+                                <ion-icon name="cloud-download-outline"></ion-icon>
+                            </a>
+                        </h4>
+
+                        <span>ChinaVis 2025 (Poster)</span>
+
+                        <p class="timeline-text">
+                            Propose a prototype that can recognize segments based on video input and generate corresponding sound effects.
+                        </p>
+                        <p class="timeline-text">
+                            <strong>Sen Zhang</strong>, Chengyang Song and Lingyun Yu
+                        </p>
+                        <p class="timeline-text">
+                            <strong>接受率:</strong> 小于 30%
+                        </p>
+
+                    </li>
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/11204728"
+                               class="paper-title-link"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Reevaluating the Gaze Cursor in Virtual Reality: A Comparative Analysis of Cursor Visibility, Confirmation Mechanisms, and Task Paradigms
+                            </a>
+                            <a href="./papers/Gaze Cursor.pdf"
+                               download="Reevaluating_the_Gaze_Cursor_in_Virtual_Reality_A_Comparative_Analysis_of_Cursor_Visibility_Confirmation_Mechanisms_and_Task_Paradigms.pdf"
+                               class="tag-box small paper-download"
+                               aria-label="Download paper PDF">
+                                <ion-icon name="cloud-download-outline"></ion-icon>
+                            </a>
+                        </h4>
+
+
+                        <span>IEEE Transactions on Visualization and Computer Graphics</span>
+
+                        <p class="timeline-text">
+                            Exploring the influence of cursor design in eye tracking interaction.
+                        </p>
+                        <p class="timeline-text">
+                            Yushi Wei; Rongkai Shi; <strong>Sen Zhang</strong>; Anil Ufuk Batmaz; Pan Hui; Hai-Ning Liang
+                        </p>
+                        <p class="timeline-text">
+                            <strong>录用率:</strong> 小于 18%
+                        </p>
+                    </li>
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">RayFlex: Inducing Weight Perception through Raycast Pseudo-Haptics in Virtual Reality</h4>
+
+                        <span>IEEE VR 2026</span>
+
+                        <p class="timeline-text">
+                            Design a system to help users perceive the weight of objects in virtual reality.
+                        </p>
+                        <p class="timeline-text">
+                            Yushi Wei, <strong>Sen Zhang</strong>, Rongkai Shi, Simon Fong, Pan Hui, and Hai-Ning Liang
+                        </p>
+                        <p class="timeline-text">
+                            <strong>录用率:</strong> 大约 21%
+                        </p>
+                    </li>
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">D-Model: Understanding the Effect of Expected Delays in Moving Target Selection in VR</h4>
+
+                        <span>International Journal of Human–Computer Interaction</span>
+
+                        <p class="timeline-text">
+                            Investigate how intentionally introduced temporal delays effect the performance and behavior of users when selecting moving targets in virtual reality.
+                        </p>
+                        <p class="timeline-text">
+                            Yushi Wei, <strong>Sen Zhang</strong>, Rongkai Shi, Huawei Tu, Jin Huang, Pan Hui, and Hai-Ning Liang
+                        </p>
+                        <p class="timeline-text">
+                            <strong>录用率:</strong> 23%
+                        </p>
+                    </li>
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">How Should the Real World Look in VR? Investigating Real vs. Digital Views for Interaction</h4>
+
+                        <span>IEEE Transactions on Visualization and Computer Graphics (Under Review)</span>
+
+                        <p class="timeline-text">
+                            Exploring whether using Passthrough Mode with the same artistic style as the application can enhance user immersion and reduce the discomfort of traditional switching to Passthrough mode.
+                        </p>
+                        <p class="timeline-text">
+                            Zixuan Guo, Jia Zhang, <strong>Sen Zhang</strong>, Tingjie Wan, Yue Li, BoYu Gao, Xubo Yang, and Hai-Ning Liang
+                        </p>
+                        <p class="timeline-text">
+                            <strong>录用率:</strong> 小于 18%
+                        </p>
+                    </li>
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Optimal Raycast Selection Feedback in Virtual Reality for Older Adults: A Design and Analysis Study</h4>
+
+                        <span>IEEE Transactions on Visualization and Computer Graphics (Under Review)</span>
+
+                        <p class="timeline-text">
+                            Propose and evaluate seven feedback techniques, including three uni-modal and four multimodal approaches for selection feedback in virtual reality for older adults
+                        </p>
+                        <p class="timeline-text">
+                            Yushi Wei, <strong>Sen Zhang</strong>, Zeju Zheng, Rongkai Shi, Mingming Fan, and Hai-Ning Liang
+                        </p>
+                        <p class="timeline-text">
+                            <strong>录用率:</strong> 小于 18%
+                        </p>
+                    </li>
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Latency Governs Efficiency, Representation Modulates Experience: Detachment Testing of Latency and Effector Representation in VR Teleoperation</h4>
+
+                        <span>IEEE Transactions on Visualization and Computer Graphics (Under Review)</span>
+
+                        <p class="timeline-text">
+                            Investigate the influence of delay and the effector representation in virtual reality teleoperation..
+                        </p>
+                        <p class="timeline-text">
+                            Fangtao Zhao, <strong>Sen Zhang</strong>, and Hai-Ning Liang
+                        </p>
+                        <p class="timeline-text">
+                            <strong>录用率:</strong> 小于 18%
+                        </p>
+                    </li>
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">Assessing Arrival Orientation Control for Point & Select Teleportation in Complex Virtual Environments</h4>
+
+                        <span>IEEE Transactions on Visualization and Computer Graphics (Under Review)</span>
+
+                        <p class="timeline-text">
+                            Assessing Arrival Orientation Control for Point & Select Teleportation in Complex Virtual Environments
+                        </p>
+                        <p class="timeline-text">
+                            Tingjie Wan, Yunxin Xu, Jia Zhang, <strong>Sen Zhang</strong>, Jianbin Song, Zixuan Guo, Lingyun Yu, Hai-Ning Liang, and BoYu Gao
+                        </p>
+                        <p class="timeline-text">
+                            <strong>录用率:</strong> 小于 18%
+                        </p>
+                    </li>
+                </ol>
+
+            </section>
+
+            <section class="timeline">
+
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="newspaper-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3">科研经历</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">科研助理</h4>
+
+                        <span>江苏省苏州市西交利物浦大学</span>
+                        <span>2023年7月 — 2024年4月</span>
+
+                        <p class="timeline-text">
+                            在线大学课程交流大规模分析的数据处理和语料库注释。
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">科研助理</h4>
+
+                        <span>江苏省苏州市西交利物浦大学 X‑CHI 实验室</span>
+                        <span>2024年6月 — 2024年9月</span>
+
+                        <p class="timeline-text">
+                            程序开发&实验管理员。
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">科研助理</h4>
+
+                        <span>江苏省苏州市西交利物浦大学 VIIS 实验室</span>
+                        <span>2024年12月 — 至今</span>
+
+                        <p class="timeline-text">
+                            程序开发&实验管理员&交互设计师。
+                        </p>
+
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">科研助理</h4>
+
+                        <span>广东省广州市香港科技大学（广州） FIT‑AWE 实验室</span>
+                        <span>2025年8月 — 至今</span>
+
+                        <p class="timeline-text">
+                            程序开发&实验管理员&交互设计师。
+                        </p>
+
+                    </li>
+
+                </ol>
+
+            </section>
+            <section class="timeline">
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <ion-icon name="briefcase-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3">工作经历</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">学生讲师</h4>
+                        <span>江苏省苏州市西交利物浦大学</span>
+                        <span>2023年9月 - 2023年11月</span>
+
+                        <p class="timeline-text">
+                            为课程苹果产品介绍提供了教学课程，涵盖了主要苹果设备的设计原则、功能和使用场景。
+                        </p>
+                    </li>
+
+                    <li class="timeline-item">
+
+                        <h4 class="h4 timeline-item-title">卡牌设计师,游戏开发,游戏测试</h4>
+                        <span>上海市零之城堡游戏工作室</span>
+                        <span>2024年9月 - 至今</span>
+
+                        <p class="timeline-text">
+                            为游戏《功夫牌》的八极和杂家职业设计和实现卡牌,游戏获得了 DICE CON 2025 卡牌类第一名.
+                        </p>
+                    </li>
+                </ol>
+
+            </section>
+
+            <!--        <section class="skill">-->
+
+            <!--          <h3 class="h3 skills-title">My skills</h3>-->
+
+            <!--          <ul class="skills-list content-card">-->
+
+            <!--            <li class="skills-item">-->
+
+            <!--              <div class="title-wrapper">-->
+            <!--                <h5 class="h5">Web design</h5>-->
+            <!--                <data value="80">80%</data>-->
+            <!--              </div>-->
+
+            <!--              <div class="skill-progress-bg">-->
+            <!--                <div class="skill-progress-fill" style="width: 80%;"></div>-->
+            <!--              </div>-->
+
+            <!--            </li>-->
+
+            <!--            <li class="skills-item">-->
+
+            <!--              <div class="title-wrapper">-->
+            <!--                <h5 class="h5">Graphic design</h5>-->
+            <!--                <data value="70">70%</data>-->
+            <!--              </div>-->
+
+            <!--              <div class="skill-progress-bg">-->
+            <!--                <div class="skill-progress-fill" style="width: 70%;"></div>-->
+            <!--              </div>-->
+
+            <!--            </li>-->
+
+            <!--            <li class="skills-item">-->
+
+            <!--              <div class="title-wrapper">-->
+            <!--                <h5 class="h5">Branding</h5>-->
+            <!--                <data value="90">90%</data>-->
+            <!--              </div>-->
+
+            <!--              <div class="skill-progress-bg">-->
+            <!--                <div class="skill-progress-fill" style="width: 90%;"></div>-->
+            <!--              </div>-->
+
+            <!--            </li>-->
+
+            <!--            <li class="skills-item">-->
+
+            <!--              <div class="title-wrapper">-->
+            <!--                <h5 class="h5">WordPress</h5>-->
+            <!--                <data value="50">50%</data>-->
+            <!--              </div>-->
+
+            <!--              <div class="skill-progress-bg">-->
+            <!--                <div class="skill-progress-fill" style="width: 50%;"></div>-->
+            <!--              </div>-->
+
+            <!--            </li>-->
+
+            <!--          </ul>-->
+
+            <!--        </section>-->
+
+        </article>
+
+
+
+
+
+        <!--
+          - #PORTFOLIO
+        -->
+
+        <article class="portfolio" data-page="portfolio">
+
+            <header>
+                <h2 class="h2 article-title">Portfolio</h2>
+            </header>
+
+            <section class="projects">
+
+                <ul class="filter-list">
+
+                    <li class="filter-item">
+                        <button class="active" data-filter-btn>All</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Web design</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Applications</button>
+                    </li>
+
+                    <li class="filter-item">
+                        <button data-filter-btn>Web development</button>
+                    </li>
+
+                </ul>
+
+                <div class="filter-select-box">
+
+                    <button class="filter-select" data-select>
+
+                        <div class="select-value" data-selecct-value>Select category</div>
+
+                        <div class="select-icon">
+                            <ion-icon name="chevron-down"></ion-icon>
+                        </div>
+
+                    </button>
+
+                    <ul class="select-list">
+
+                        <li class="select-item">
+                            <button data-select-item>All</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Web design</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Applications</button>
+                        </li>
+
+                        <li class="select-item">
+                            <button data-select-item>Web development</button>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="project-list">
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Finance</h3>
+
+                            <p class="project-category">Web development</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Orizon</h3>
+
+                            <p class="project-category">Web development</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web design">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Fundo</h3>
+
+                            <p class="project-category">Web design</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="applications">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Brawlhalla</h3>
+
+                            <p class="project-category">Applications</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web design">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">DSM.</h3>
+
+                            <p class="project-category">Web design</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web design">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">MetaSpark</h3>
+
+                            <p class="project-category">Web design</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Summary</h3>
+
+                            <p class="project-category">Web development</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="applications">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Task Manager</h3>
+
+                            <p class="project-category">Applications</p>
+
+                        </a>
+                    </li>
+
+                    <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="#">
+
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+
+                                <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                            </figure>
+
+                            <h3 class="project-title">Arrival</h3>
+
+                            <p class="project-category">Web development</p>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </article>
+
+        <!--
+          - #CONTACT
+        -->
+
+        <article class="contact" data-page="contact">
+
+            <header>
+                <h2 class="h2 article-title">联系我</h2>
+            </header>
+
+            <section class="mapbox" data-mapbox>
+                <figure>
+                    <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218118.11052860244!2d118.22936071476461!3d31.32873621305992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34354978b41cab51%3A0xf168d14d8f0a2226!2z5Lit5Zu95a6J5b6955yB6Iqc5rmW5biC!5e0!3m2!1szh-CN!2shk!4v1766975244934!5m2!1szh-CN!2shk"
+                            width="400" height="300" loading="lazy"></iframe>
+                </figure>
+            </section>
+
+            <section class="contact-form">
+
+                <h3 class="h3 form-title">联系表单</h3>
+
+                <form action="https://formspree.io/f/mlgepyjk" method="POST" class="form" data-form>
+                    <div class="input-wrapper">
+                        <input type="text" name="fullname" class="form-input" placeholder="姓名" required data-form-input>
+                        <input type="email" name="email" class="form-input" placeholder="邮箱地址" required data-form-input>
+                    </div>
+
+                    <textarea name="message" class="form-input" placeholder="请输入你的留言" required data-form-input></textarea>
+
+                    <input type="hidden" name="subject" value="New message from Chinese portfolio">
+
+                    <button class="form-btn" type="submit" data-form-btn>
+                        <ion-icon name="paper-plane"></ion-icon>
+                        <span>发送消息</span>
+                    </button>
+                </form>
+
+            </section>
+
+        </article>
+
+    </div>
+
+</main>
+
+
+
+
+
+
+<!--
+  - custom js link
+-->
+<script src="./assets/js/script.js"></script>
+
+<!--
+  - ionicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
