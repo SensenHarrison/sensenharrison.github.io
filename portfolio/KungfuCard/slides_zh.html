@@ -3,10 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>星之卡比2D游戏幻灯片</title>
+    <title>《功夫牌》幻灯片</title>
 
     <link rel="icon" href="../../assets/images/logo.png" type="image/png">
-
 
     <style>
         :root{
@@ -98,30 +97,39 @@
 <body>
 <div class="deck" id="deck">
 
-    <!-- 12 slides -->
-    <section class="slide"><img src="./slides/slide16.PNG"  alt="第 1 张幻灯片"  loading="lazy"></section>
-    <section class="slide"><img src="./slides/slide17.PNG"  alt="第 2 张幻灯片"  loading="lazy"></section>
-    <section class="slide"><img src="./slides/slide18.PNG"  alt="第 3 张幻灯片"  loading="lazy"></section>
-    <section class="slide"><img src="./slides/slide19.PNG"  alt="第 4 张幻灯片"  loading="lazy"></section>
-    <section class="slide"><img src="./slides/slide20.PNG"  alt="第 5 张幻灯片"  loading="lazy"></section>
-    <section class="slide"><img src="./slides/slide21.PNG"  alt="第 6 张幻灯片"  loading="lazy"></section>
-    <section class="slide"><img src="./slides/slide22.PNG"  alt="第 7 张幻灯片"  loading="lazy"></section>
-    <section class="slide"><img src="./slides/slide23.PNG"  alt="第 8 张幻灯片"  loading="lazy"></section>
-    <section class="slide"><img src="./slides/slide24.PNG"  alt="第 9 张幻灯片"  loading="lazy"></section>
-    <section class="slide"><img src="./slides/slide25.PNG" alt="第 10 张幻灯片" loading="lazy"></section>
-    <section class="slide"><img src="./slides/slide26.PNG" alt="第 11 张幻灯片" loading="lazy"></section>
-    <section class="slide"><img src="./slides/slide27.PNG" alt="第 12 张幻灯片" loading="lazy"></section>
-    <section class="slide"><img src="./slides/slide28.PNG" alt="第 13 张幻灯片" loading="lazy"></section>
-    <section class="slide"><img src="./slides/slide29.PNG" alt="第 14 张幻灯片" loading="lazy"></section>
-    <section class="slide"><img src="./slides/slide30.PNG" alt="第 15 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide27.PNG"  alt="第 1 张幻灯片"  loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide28.PNG"  alt="第 2 张幻灯片"  loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide29.PNG"  alt="第 3 张幻灯片"  loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide30.PNG"  alt="第 4 张幻灯片"  loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide31.PNG"  alt="第 5 张幻灯片"  loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide32.PNG"  alt="第 6 张幻灯片"  loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide33.PNG"  alt="第 7 张幻灯片"  loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide34.PNG"  alt="第 8 张幻灯片"  loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide35.PNG"  alt="第 9 张幻灯片"  loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide36.PNG" alt="第 10 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide37.PNG" alt="第 11 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide38.PNG" alt="第 12 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide39.PNG" alt="第 13 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide40.PNG" alt="第 14 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide41.PNG" alt="第 15 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide42.PNG" alt="第 16 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide43.PNG" alt="第 17 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide44.PNG" alt="第 18 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide45.PNG" alt="第 19 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide46.PNG" alt="第 20 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide47.PNG" alt="第 21 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide48.PNG" alt="第 22 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide49.PNG" alt="第 23 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide50.PNG" alt="第 24 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide51.PNG" alt="第 25 张幻灯片" loading="lazy"></section>
+    <section class="slide"><img src="./slides/slide52.PNG" alt="第 26 张幻灯片" loading="lazy"></section>
+
 
 </div>
 
 <div class="hud">
-    <div class="chip" id="page">1 / 15</div>
-
+    <div class="chip" id="page">1 / 26</div>
     <div class="chip hint">鼠标滚动 / 方向键 / 翻页键 / 空格键</div>
-
     <div class="chip">
         <button class="btn" id="prev" type="button">上一页</button>
         <button class="btn" id="next" type="button">下一页</button>
@@ -133,23 +141,22 @@
     const slides = Array.from(deck.querySelectorAll('.slide'));
     const pageEl = document.getElementById('page');
 
-    // 计算“每一页真正的步长”（= slide 的高度）
     function stepHeight() {
-        const first = slides[0];
-        return first ? first.getBoundingClientRect().height : deck.clientHeight;
+        // 每页的真实高度（避免 deck padding 造成误差）
+        return slides[0].getBoundingClientRect().height;
     }
 
-    function currentIndex() {
+    function currentIndex(){
         const h = stepHeight();
         return Math.max(0, Math.min(slides.length - 1, Math.round(deck.scrollTop / h)));
     }
 
-    function updatePage() {
+    function updatePage(){
         const idx = currentIndex();
         pageEl.textContent = `${idx + 1} / ${slides.length}`;
     }
 
-    function go(delta) {
+    function go(delta){
         const h = stepHeight();
         deck.scrollBy({ top: delta * h, behavior: 'smooth' });
     }
