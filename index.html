@@ -3,6 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
+    <script>
+        (function () {
+            const savedLang = localStorage.getItem("siteLang");
+
+            if (savedLang === "en") return;
+
+            const browserLang = (navigator.language || navigator.userLanguage || "").toLowerCase();
+
+            if (savedLang === "zh" || browserLang.startsWith("zh")) {
+                window.location.replace("./index-zh.html");
+            }
+        })();
+    </script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sen Zhang Personal Portfolio</title>
@@ -197,7 +210,7 @@
             </li>
 
             <li class="navbar-item">
-                <a class="navbar-link" href="./index-zh.html">中文</a>
+                <a class="navbar-link" href="./index-zh.html" onclick="localStorage.setItem('siteLang', 'zh')">中文</a>
             </li>
 
         </ul>
